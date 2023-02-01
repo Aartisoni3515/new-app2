@@ -1,20 +1,19 @@
 import { useState } from "react";
-// import React from "react";
 import { Link } from "react-router-dom";
+import { FiShoppingCart } from "react-icons/fi";
+import{FaUserCircle} from "react-icons/fa"
 
-function NavBar() {
-  const [IsMobile , setIsMobile]= useState(false)
+function NavBar(props) {
+  const [IsMobile, setIsMobile] = useState(false);
   return (
     <>
       <nav className="navbar">
         <h3 className="logo">Logo</h3>
 
-        {/* <ul className="nav-links"> */}
-        <ul className={IsMobile?  "nav-links-mobile": "nav-links"}
-
-        onClick={()=> setIsMobile(false)} >
-        
-
+        <ul
+          className={IsMobile ? "nav-links-mobile" : "nav-links"}
+          onClick={() => setIsMobile(false)}
+        >
           <Link to="/" className="Home">
             <li>Home</li>
           </Link>
@@ -23,26 +22,34 @@ function NavBar() {
             <li>Services</li>
           </Link>
 
-          <Link to="/About" className="About">
-            <li>About</li>
-          </Link>
-
           <Link to="/Contact" className="Contact">
             <li>Contact</li>
           </Link>
+          <Link to="/About" className="About">
+            <li> <FaUserCircle/></li>
+          </Link>
+
+          <Link to="/Cart" className="Contact-1">
+            <li>
+             
+              <FiShoppingCart />
+              <sup>{props.count}</sup>
+            </li>
+          </Link>
         </ul>
 
-         <button  className="mobile-menu-icon " onClick={()=>setIsMobile(!IsMobile)} >
-          {IsMobile?  
-          
-           (<i className="fas fa-align-justify"></i> ):
-          ( <i className="fas fa-align-justify"></i>) }
-          
-
-            
-              </button>
-        
+        <button
+          className="mobile-menu-icon "
+          onClick={() => setIsMobile(!IsMobile)}
+        >
+          {IsMobile ? (
+            <i className="fas fa-align-justify"></i>
+          ) : (
+            <i className="fas fa-align-justify"></i>
+          )}
+        </button>
       </nav>
+
     </>
   );
 }
