@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "./NavBar";
 import AOS from "aos";
 import 'aos/dist/aos.css'
 import {
@@ -36,7 +35,6 @@ function Contact() {
 
   return (
     <>
-      <NavBar />
       <div className="container-1"  >
         <div className="card" data-aos="fade-right" >
           <div className="item">

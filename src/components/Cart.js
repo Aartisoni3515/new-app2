@@ -4,7 +4,7 @@ import CartList from "./CartList";
 import { useState } from "react";
 
 function Cart() {
-  const [product] = useState([
+  const [product] = useState ( [
     {
       url: "https://rukminim1.flixcart.com/image/300/300/l51d30w0/shoe/z/w/c/10-mrj1914-10-aadi-white-black-red-original-imagft9k9hydnfjp.jpeg?q=70",
       name: "TRQ White Shoes",

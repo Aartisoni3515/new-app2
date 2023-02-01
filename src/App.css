@@ -51,11 +51,11 @@
   background-color: white;
 }
 .img-1 {
-  /* margin-top: 30px; */
   width: 130%;
   margin: 30px 30px 30px -47px;
-  /* height: 70%; */
 }
+
+
 .image-container {
   display: flex;
   justify-content: space-evenly;
