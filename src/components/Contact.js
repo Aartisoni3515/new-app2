@@ -99,6 +99,7 @@ function Contact() {
               submit
             </button>
           </form>
+        <p style={{color:"white" , paddingTop:"250px"}} >Made by Aarti with 🤍</p>
         
         </div>
       </div>
