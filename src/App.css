@@ -352,8 +352,6 @@ h1 {
     display: block;
     position: absolute;
     font-size: 30px;
-    /* color: white; */
-    /* background-color: rgb(123, 62, 181); */
     border: none;
     outline: none;
     top: 15px;
@@ -362,7 +360,6 @@ h1 {
 
   .image-container {
     overflow: hidden;
-    /* display: flex; */
     flex-direction: row;
     border: 1px solid rgb(123, 62, 181);
     height: 20%;
